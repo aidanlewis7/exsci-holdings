@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Energy Requirements | ExSci Holdings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">ExSci <span>Holdings</span></a>
+            <p>Exercise Science. Easier.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h1>Daily Energy Requirements</h1>
+            <p>Estimate your daily energy needs using your personal details.</p>
+        </section>
+
+        <section class="calculator-card energy-result-card">
+            <h2>Your Results</h2>
+
+            <p>
+                Basal Metabolic Rate (BMR) estimates the energy your body
+                uses at rest. Total Daily Energy Expenditure (TDEE) estimates
+                your total daily energy use, including physical activity.
+            </p>
+
+            <div class="result-item">
+                <h3>Basal Metabolic Rate (BMR)</h3>
+                <p id="bmr-value">Calculating...</p>
+                <p>Estimated energy use at rest, in kcal/day.</p>
+            </div>
+
+            <hr>
+
+            <div class="result-item">
+                <h3>Total Daily Energy Expenditure (TDEE)</h3>
+                <p id="tdee-value">Calculating...</p>
+                <p>Estimated daily energy expenditure, in kcal/day.</p>
+            </div>
+
+            <hr>
+
+            <div class="formula-box">
+                <h3>How is it calculated?</h3>
+                <p id="energy-formula">Calculating...</p>
+            </div>
+
+            <p class="bmi-note">
+                These results are estimates, not direct measurements.
+                Individual energy needs may differ. Activity multipliers
+                are approximate and should not be treated as exact values.
+            </p>
+
+            <div class="centered-action">
+                <a href="calculators.html" class="back-button">
+                    Back to Calculators
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>ExSci Holdings Ltd | Exercise Science. Easier.</p>
+    </footer>
+
+    <script src="../js/energy.js"></script>
+</body>
+</html>

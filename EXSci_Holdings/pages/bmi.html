@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | ExSci Holdings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">ExSci <span>Holdings</span></a>
+            <p>Exercise Science. Easier.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h1>BMI Calculator</h1>
+            <p>Calculate and understand your Body Mass Index.</p>
+        </section>
+
+        <section class="calculator-card bmi-result-card">
+            <h2>Your Results</h2>
+
+            <p>
+                BMI is calculated by dividing body weight in kilograms
+                by height in metres squared.
+            </p>
+
+            <div class="formula-box">
+                <h3>General formula</h3>
+                <p>BMI = Weight (kg) ÷ Height (m)²</p>
+            </div>
+
+            <hr>
+
+            <div class="result-item">
+                <h3>Your calculation</h3>
+                <p id="bmi-formula">Calculating...</p>
+            </div>
+
+            <div class="result-item">
+                <h3>Your BMI</h3>
+                <p id="bmi-value">Calculating...</p>
+                <p id="bmi-category"></p>
+            </div>
+
+            <p class="bmi-note">
+                BMI is a screening measure, not a diagnosis. It does not
+                directly measure body fat and may not accurately reflect
+                body composition in every individual.
+            </p>
+
+            <div class="centered-action">
+                <a href="calculators.html" class="back-button">
+                    Back to Calculators
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>ExSci Holdings Ltd | Exercise Science. Easier.</p>
+    </footer>
+
+    <script src="../js/bmi.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Rep Max Calculator | ExSci Holdings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">ExSci <span>Holdings</span></a>
+            <p>Exercise Science. Easier.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="page-heading">
+            <p class="eyebrow">STRENGTH & PERFORMANCE</p>
+            <h1>One-Rep Max Calculator</h1>
+            <p>Estimate the maximum weight you could lift for one repetition.</p>
+        </section>
+
+        <section class="calculator-card">
+            <h2>Enter Your Lifting Results</h2>
+
+            <form id="one-rep-max-form">
+
+                <div class="form-group">
+                    <label for="lift-weight">Weight lifted (kg)</label>
+                    <input
+                        type="number"
+                        id="lift-weight"
+                        min="0.1"
+                        max="1000"
+                        step="0.1"
+                        placeholder="e.g. 60"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="repetitions">Repetitions completed</label>
+                    <input
+                        type="number"
+                        id="repetitions"
+                        min="1"
+                        max="10"
+                        step="1"
+                        placeholder="e.g. 8"
+                        required>
+                    <p class="field-note">
+                        For a more useful estimate, enter a challenging set
+                        of 1–10 repetitions.
+                    </p>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Calculate One-Rep Max
+                </button>
+
+            </form>
+        </section>
+
+        <section class="calculator-card" id="one-rep-max-results" hidden>
+            <h2>Your Estimated Result</h2>
+
+            <div class="result-item">
+                <h3>Estimated One-Rep Max</h3>
+                <p id="one-rep-max-value">—</p>
+                <p>Estimated maximum weight for one repetition.</p>
+            </div>
+
+            <hr>
+
+            <div class="formula-box">
+                <h3>Calculation</h3>
+                <p id="one-rep-max-formula"></p>
+            </div>
+
+            <p class="bmi-note">
+                This is an estimate, not a direct measurement of strength.
+                Accuracy depends on the equation, exercise, technique,
+                and the effort made during the set.
+            </p>
+        </section>
+
+        <section class="calculator-card">
+            <h2>Understanding the Equation</h2>
+
+            <p>
+                The Epley equation estimates your one-repetition maximum
+                (1RM) from the weight you lifted and the number of repetitions
+                completed.
+            </p>
+
+            <div class="formula-box">
+                <p><strong>1RM = Weight × (1 + Repetitions ÷ 30)</strong></p>
+            </div>
+
+            <p>
+                <strong>Example:</strong> If you lift 60 kg for 8 repetitions,
+                the estimated 1RM is 76 kg.
+            </p>
+
+            <p class="bmi-note">
+                Avoid attempting a true maximum lift without suitable
+                technique, preparation, and appropriate supervision.
+            </p>
+        </section>
+
+        <div class="centered-action">
+            <a href="calculators.html" class="back-button">
+                Back to Calculators
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>ExSci Holdings Ltd | Exercise Science. Easier.</p>
+    </footer>
+
+    <script src="../js/one-rep-max.js"></script>
+</body>
+</html>
